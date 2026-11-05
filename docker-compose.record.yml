@@ -1,0 +1,10 @@
+# Record mode: bind VaultBank to a dedicated loopback IP so the disguised
+# domain resolves on :80 with no port and no clash with your other nginx.
+services:
+  vaultbank:
+    build: .
+    container_name: vaultbank
+    ports:
+      - "127.0.0.77:80:80"
+      - "127.0.0.77:8080:8080"
+    restart: "no"

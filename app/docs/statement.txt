@@ -1,0 +1,4 @@
+VaultBank — Monthly Statement
+Account: admin   Period: 2026-10
+Opening balance: $281,900
+Closing balance: $284,500

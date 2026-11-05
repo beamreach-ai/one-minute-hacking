@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% block title %}VaultBank{% endblock %}</title>
+<style>
+  :root{--bg:#0a0f1a;--panel:#121a2a;--line:#223049;--fg:#e6eefb;--muted:#8fa0bd;--brand:#39d98a;--accent:#4fd1ff}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+   font-family:ui-sans-serif,system-ui,"Segoe UI",sans-serif;min-height:100vh}
+  .top{display:flex;align-items:center;gap:10px;padding:16px 22px;border-bottom:1px solid var(--line);background:var(--panel)}
+  .logo{font-weight:800;letter-spacing:-.02em;font-size:1.15rem}.logo b{color:var(--brand)}
+  .muted{color:var(--muted)}.wrap{max-width:860px;margin:0 auto;padding:34px 22px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px}
+  input{width:100%;padding:12px 14px;border-radius:9px;border:1px solid var(--line);
+   background:#0c1322;color:var(--fg);font-size:1rem;margin-top:6px}
+  label{font-size:.82rem;color:var(--muted)}
+  button{margin-top:18px;width:100%;padding:12px;border:0;border-radius:9px;background:var(--brand);
+   color:#04110a;font-weight:700;font-size:1rem;cursor:pointer}
+  .err{background:#3a1420;border:1px solid #6b2436;color:#ff8ba0;padding:10px 12px;border-radius:9px;margin-bottom:14px;font-size:.9rem}
+  table{width:100%;border-collapse:collapse;margin-top:10px}td,th{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+  th{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+  .big{font-size:2.2rem;font-weight:800;color:var(--brand)}.pill{display:inline-block;padding:3px 10px;border:1px solid var(--line);border-radius:999px;font-size:.78rem;color:var(--accent)}
+</style></head><body>
+<div class="top"><span class="logo">Vault<b>Bank</b></span><span class="muted">· secure online banking</span></div>
+<div class="wrap">{% block body %}{% endblock %}</div></body></html>

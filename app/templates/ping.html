@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block body %}
+<div class="card" style="max-width:460px">
+  <h2 style="margin:0 0 4px">Network tools</h2>
+  <p class="muted">Ping a host to check connectivity.</p>
+  <form method="post" action="/tools/ping">
+    <label>Host</label><input name="host" value="8.8.8.8">
+    <button type="submit">Ping</button>
+  </form>
+</div>{% endblock %}

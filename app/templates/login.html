@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% block body %}
+<div style="max-width:380px;margin:40px auto">
+  <div class="card">
+    <h2 style="margin:0 0 6px">Sign in</h2>
+    <p class="muted" style="margin:0 0 20px">Access your VaultBank account</p>
+    {% if error %}<div class="err">{{ error }}</div>{% endif %}
+    <form method="post" action="/login">
+      <label>Username</label><input name="username" autocomplete="off" value="admin">
+      <label style="display:block;margin-top:14px">4-digit PIN</label><input name="pin" inputmode="numeric" autocomplete="off">
+      <button type="submit">Sign in</button>
+    </form>
+  </div>
+  <p class="muted" style="text-align:center;font-size:.8rem;margin-top:16px">© VaultBank — demo environment</p>
+</div>{% endblock %}

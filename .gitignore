@@ -1,0 +1,13 @@
+# runtime / generated
+app/vault.db
+app/webroot/.git/
+__pycache__/
+*.pyc
+# reel build artifacts (big)
+reels/frames*/
+reels/*.mp4
+reels/*.png
+reels/hydra_raw.txt
+.venv/
+hydra.restore*
+reels/enc.log

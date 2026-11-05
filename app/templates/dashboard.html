@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<div class="card">
+  <span class="pill">{{ role }}</span>
+  <h2 style="margin:10px 0 2px">Welcome back, {{ user }}</h2>
+  <p class="muted" style="margin:0">Available balance</p>
+  <div class="big">${{ "{:,}".format(balance) }}</div>
+  <p class="muted" style="margin-top:18px">Recent activity available in the full statement.</p>
+</div>{% endblock %}

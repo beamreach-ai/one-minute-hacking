@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<div class="card">
+  <h2 style="margin:0 0 4px">Admin · all accounts</h2>
+  <p class="muted" style="margin:0 0 8px">Internal — restricted</p>
+  <table><tr><th>User</th><th>Role</th><th>Balance</th></tr>
+  {% for u in users %}<tr><td>{{ u["username"] }}</td><td>{{ u["role"] }}</td><td>${{ "{:,}".format(u["balance"]) }}</td></tr>{% endfor %}
+  </table>
+</div>{% endblock %}
